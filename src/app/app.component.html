@@ -1,0 +1,6 @@
+<div class="container">
+  <app-header-component></app-header-component>
+  <app-todo-form (genTask)="genTask($event)"></app-todo-form>
+  <hr>
+    <app-todo-list [taskList]="tasks"></app-todo-list>
+</div>
