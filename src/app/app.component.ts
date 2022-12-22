@@ -14,4 +14,9 @@ export class AppComponent {
     console.log(task)
     this.tasks.push(task)
   }
+  deleteTask(index){
+    this.tasks.splice(index, 1)
+    console.log("coming from app component ", index)
+    console.log(this.tasks[index], "deleted")
+  }
 }

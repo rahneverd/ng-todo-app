@@ -1,4 +1,4 @@
 
 <div class="row" *ngFor="let task of taskList; let i = index">
-  <app-todo-item name={{task.name}} description={{task.description}} index={{i}} (deleteTask)="deleteTask($event)"></app-todo-item>
+  <app-todo-item name={{task.name}} description={{task.description}} index={{i}} (deleteTask)="deleteTask.emit($event)"></app-todo-item>
 </div>
