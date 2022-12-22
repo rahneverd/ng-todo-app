@@ -11,12 +11,10 @@ export class AppComponent {
   tasks: Task[] =[]
   taskRecieved = "No"
   genTask(task: Task) {
-    console.log(task)
-    this.tasks.push(task)
+    task.name === '' && task.description === '' ? window.alert("Task name or description cannot be empty") : this.tasks.push(task);
+    
   }
   deleteTask(index){
     this.tasks.splice(index, 1)
-    console.log("coming from app component ", index)
-    console.log(this.tasks[index], "deleted")
   }
 }
