@@ -10,7 +10,7 @@
         <input type="text" class="form-control" id="taskDescription" placeholder="Description" [(ngModel)]="taskDescription" name="description">
       </div>
       
-      <button type="submit" class="btn btn-success" (click)="pushTask()" [disabled]="taskname === '' || taskDescription === ''">Create a new task!</button>
+      <button type="submit" class="btn btn-success" (click)="pushTask()" [disabled]="taskName === '' || taskDescription === ''">Create a new task!</button>
     </form>
   </div>
 </div>
