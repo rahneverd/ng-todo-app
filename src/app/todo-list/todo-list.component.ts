@@ -11,5 +11,7 @@ export class TodoListComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  deleteTask(index){
+    console.log(index)
+  }
 }
