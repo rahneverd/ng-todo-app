@@ -8,9 +8,13 @@ import { Component, Input, OnInit } from '@angular/core';
 export class TodoItemComponent implements OnInit {
   @Input() name
   @Input() description
+  @Input() index
   constructor() { }
 
   ngOnInit(): void {
+  }
+  deleteTask(){
+    console.log(this.index)
   }
 
 }

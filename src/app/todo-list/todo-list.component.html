@@ -1,4 +1,4 @@
 
 <div class="row" *ngFor="let task of taskList; let i = index">
-  <app-todo-item name={{task.name}} description={{task.description}}></app-todo-item>
+  <app-todo-item name={{task.name}} description={{task.description}} index={{i}}></app-todo-item>
 </div>
